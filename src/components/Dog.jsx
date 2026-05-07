@@ -138,7 +138,7 @@ function Dog() {
     );
   }
 
-  // dogMaterial.onBeforeCompile = onBeforeCompile;
+  dogMaterial.onBeforeCompile = onBeforeCompile;
 
   model.scene.traverse((child) => {
     if (child.name.includes("DOG")) {
@@ -154,7 +154,7 @@ function Dog() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#section-1",
-        endTrigger: "#section-3",
+        endTrigger: "#section-4",
         start: "top top",
         end: "bottom bottom",
         markers: true,
@@ -194,13 +194,109 @@ function Dog() {
         material.current.uMatcap1.value = mat19;
         gsap.to(material.current.uProgress, {
           value: 0.0,
-          duration: 0.9,
+          duration: 0.3,
           onComplete: () => {
             material.current.uMatcap2.value = material.current.uMatcap1.value;
             material.current.uProgress.value = 1.0;
           },
         });
       });
+    document
+      .querySelector(`.title[img-title="navy-pier"]`)
+      .addEventListener("mouseenter", () => {
+        material.current.uMatcap1.value = mat8;
+
+        gsap.to(material.current.uProgress, {
+          value: 0.0,
+          duration: 0.3,
+          onComplete: () => {
+            material.current.uMatcap2.value = material.current.uMatcap1.value;
+            material.current.uProgress.value = 1.0;
+          },
+        });
+      });
+    document
+      .querySelector(`.title[img-title="msi-chicago"]`)
+      .addEventListener("mouseenter", () => {
+        material.current.uMatcap1.value = mat9;
+
+        gsap.to(material.current.uProgress, {
+          value: 0.0,
+          duration: 0.3,
+          onComplete: () => {
+            material.current.uMatcap2.value = material.current.uMatcap1.value;
+            material.current.uProgress.value = 1.0;
+          },
+        });
+      });
+    document
+      .querySelector(`.title[img-title="phone"]`)
+      .addEventListener("mouseenter", () => {
+        material.current.uMatcap1.value = mat12;
+
+        gsap.to(material.current.uProgress, {
+          value: 0.0,
+          duration: 0.3,
+          onComplete: () => {
+            material.current.uMatcap2.value = material.current.uMatcap1.value;
+            material.current.uProgress.value = 1.0;
+          },
+        });
+      });
+    document
+      .querySelector(`.title[img-title="kikk"]`)
+      .addEventListener("mouseenter", () => {
+        material.current.uMatcap1.value = mat10;
+
+        gsap.to(material.current.uProgress, {
+          value: 0.0,
+          duration: 0.3,
+          onComplete: () => {
+            material.current.uMatcap2.value = material.current.uMatcap1.value;
+            material.current.uProgress.value = 1.0;
+          },
+        });
+      });
+    document
+      .querySelector(`.title[img-title="kennedy"]`)
+      .addEventListener("mouseenter", () => {
+        material.current.uMatcap1.value = mat8;
+
+        gsap.to(material.current.uProgress, {
+          value: 0.0,
+          duration: 0.3,
+          onComplete: () => {
+            material.current.uMatcap2.value = material.current.uMatcap1.value;
+            material.current.uProgress.value = 1.0;
+          },
+        });
+      });
+    document
+      .querySelector(`.title[img-title="opera"]`)
+      .addEventListener("mouseenter", () => {
+        material.current.uMatcap1.value = mat13;
+
+        gsap.to(material.current.uProgress, {
+          value: 0.0,
+          duration: 0.3,
+          onComplete: () => {
+            material.current.uMatcap2.value = material.current.uMatcap1.value;
+            material.current.uProgress.value = 1.0;
+          },
+        });
+      });
+    document.querySelector(`.titles`).addEventListener("mouseleave", () => {
+      material.current.uMatcap1.value = mat2;
+
+      gsap.to(material.current.uProgress, {
+        value: 0.0,
+        duration: 0.3,
+        onComplete: () => {
+          material.current.uMatcap2.value = material.current.uMatcap1.value;
+          material.current.uProgress.value = 1.0;
+        },
+      });
+    });
   }, []);
 
   return (

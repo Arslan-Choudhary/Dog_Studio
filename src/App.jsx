@@ -118,7 +118,43 @@ function App() {
         </div>
       </section>
 
-      <section id="section-3"></section>
+      <section id="section-3">
+        <div className="top">
+          <div className="left">
+            <h3>
+              Lorem ipsum dolor <br /> sit amet <br /> consectetur adipisicing{" "}
+              <br /> elit. Nulla
+            </h3>
+          </div>
+          <div className="right"></div>
+        </div>
+      </section>
+
+      <secion id="section-4">
+        <div className="bottom">
+          <div className="left"></div>
+          <div className="right">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iste
+              qui cumque necessitatibus voluptatum rerum! Labore eaque,
+              inventore iste quia aliquam amet perferendis beatae voluptatum
+              placeat optio vel sint! Beatae magni deserunt sit ducimus
+              cupiditate ad autem, adipisci repellat repellendus porro ratione,
+              consequuntur architecto placeat perferendis hic non dolores
+              suscipit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iste
+              qui cumque necessitatibus voluptatum rerum! Labore eaque,
+              inventore iste quia aliquam amet perferendis beatae voluptatum
+              placeat optio vel sint! Beatae magni deserunt sit ducimus
+              cupiditate ad autem, adipisci repellat repellendus porro ratione,
+              consequuntur architecto placeat perferendis hic non dolores
+              suscipit.
+            </p>
+          </div>
+        </div>
+      </secion>
     </main>
   );
 }
